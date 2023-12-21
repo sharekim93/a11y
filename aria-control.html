@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+  <body>
+    <div class="tab-interface">
+      <div role="tablist" aria-label="Sample Tabs">
+        <!-- aria-controls 로 어떤 요소를 컨트롤 하는지 알려 줌-->
+        <span
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-1"
+          id="tab-1"
+          tabindex="0"
+        >
+          First Tab
+        </span>
+        <span
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-2"
+          id="tab-2"
+          tabindex="1"
+        >
+          Second Tab
+        </span>
+        <span
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-3"
+          id="tab-3"
+          tabindex="2"
+        >
+          Third Tab
+        </span>
+      </div>
+      <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+        <p>Content for the first panel</p>
+      </div>
+      <div id="panel-2" role="tabpanel" tabindex="1" aria-labelledby="tab-2">
+        <p>Content for the Second panel</p>
+      </div>
+      <div id="panel-3" role="tabpanel" tabindex="2" aria-labelledby="tab-3">
+        <p>Content for the Third panel</p>
+      </div>
+    </div>
+  </body>
+</html>
